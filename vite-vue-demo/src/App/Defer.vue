@@ -1,6 +1,6 @@
 <script setup>
-import HeavyComp from './components/HeavyComp.vue'
-import { useDefer } from './hooks/useDefer'
+import HeavyComp from '../components/HeavyComp.vue'
+import { useDefer } from '../hooks/useDefer'
 const defer = useDefer()
 </script>
 
