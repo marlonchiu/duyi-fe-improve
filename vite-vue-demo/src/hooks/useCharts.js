@@ -1,15 +1,14 @@
 import { onMounted } from 'vue'
 import * as echarts from 'echarts'
 
-export function useCharts(width = 500, chartRef) {
-  console.log('🚀 ~ file: useCharts.js:4 ~ useCharts ~ chartRef:', chartRef)
+export function useCharts(width, chartRef) {
+  let myChart = null
 
-  console.log('🚀 ~ file: useCharts.js:4 ~ useCharts ~ chartRef:', chartRef.value)
-  if (chartRef) {
-    console.log('🚀 ~ file: useCharts.js:4 ~ useCharts ~ chartRef:', chartRef.value)
-    var myChart = echarts.init(chartRef.value)
-    console.log('🚀 ~ file: useCharts.js:8 ~ useCharts ~ myChart:', myChart.width())
-    // myChart
+  function renderChart() {
+    myChart = echarts.init(chartRef.value, null, {
+      width: width.value,
+      height: 400
+    })
     var option
 
     option = {
@@ -20,14 +19,6 @@ export function useCharts(width = 500, chartRef) {
           crossStyle: {
             color: '#999'
           }
-        }
-      },
-      toolbox: {
-        feature: {
-          dataView: { show: true, readOnly: false },
-          magicType: { show: true, type: ['line', 'bar'] },
-          restore: { show: true },
-          saveAsImage: { show: true }
         }
       },
       legend: {
@@ -101,9 +92,15 @@ export function useCharts(width = 500, chartRef) {
 
     option &&
       myChart.setOption({
-        width: 800,
-        height: 400,
         ...option
       })
   }
+
+  onMounted(() => {
+    renderChart()
+
+    // window.addEventListener('resize', function () {
+    //   myChart.resize()
+    // })
+  })
 }

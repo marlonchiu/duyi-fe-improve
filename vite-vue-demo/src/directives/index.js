@@ -1,7 +1,9 @@
-import SizeOb from './sizeDirect'
+import sizeOb from './size-ob'
+import backTop from './back-top'
 
 const directives = {
-  SizeOb
+  'size-ob': sizeOb,
+  'back-top': backTop
 }
 
 export default {

@@ -5,15 +5,13 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 import { useCharts } from '../hooks/useCharts'
 
 const chartRef = ref(null)
-const width = ref(500)
+const width = ref(600)
 
-onMounted(() => {
-  useCharts(width, chartRef)
-})
+useCharts(width, chartRef)
 
 function handleSizeChange(size) {
   console.log('🚀 ~ file: Resize.vue:17 ~ handleSizeChange ~ size:', size)
