@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>文字智能适配背景</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .banner {
+        height: 200px;
+        border: 2px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, #000 0, #000 50%, #fff 50%);
+      }
+
+      .title {
+        color: #fff;
+        font-size: 3em;
+        transition: 0.5s;
+        mix-blend-mode: difference;
+      }
+
+      .banner:hover .title {
+        transform: translateX(-100px);
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+神奇的 CSS，让文字智能适配背景颜色
+https://www.cnblogs.com/coco1s/p/16012545.html
+-->
+    <div class="banner">
+      <h1 class="title">育人为渡 经久如一</h1>
+    </div>
+  </body>
+</html>
