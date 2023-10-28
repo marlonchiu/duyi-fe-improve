@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>读取 剪贴板内容</title>
+  </head>
+  <body>
+    <div class="editor"></div>
+    <script>
+      navigator.clipboard.readText().then((text) => {
+        document.querySelector('.editor').innerHTML = text
+      })
+    </script>
+  </body>
+</html>

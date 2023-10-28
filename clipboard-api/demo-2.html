@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>复制 - 剪贴板内容</title>
+  </head>
+  <body>
+    <input type="text" class="txt" />
+    <button class="btn">复制</button>
+
+    <script>
+      const btn = document.querySelector('.btn')
+      const txt = document.querySelector('.txt')
+
+      btn.addEventListener('click', () => {
+        console.log(txt.value)
+        navigator.clipboard.writeText(`${txt.value},相关的版权信息`)
+      })
+    </script>
+  </body>
+</html>

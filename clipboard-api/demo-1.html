@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>剪贴板 复制</title>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Maecenas accumsan lacus vel facilisis volutpat. Vitae nunc sed velit dignissim sodales. Felis eget
+      velit aliquet sagittis id consectetur purus ut. Vestibulum morbi blandit cursus risus at. Gravida arcu ac tortor
+      dignissim convallis aenean et. Risus feugiat in ante metus dictum. Pretium quam vulputate dignissim suspendisse in
+      est ante in.
+    </p>
+    <script>
+      document.addEventListener('copy', (e) => {
+        e.preventDefault()
+        navigator.clipboard.writeText('hello world!')
+      })
+    </script>
+  </body>
+</html>
