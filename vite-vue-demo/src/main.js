@@ -4,8 +4,8 @@ import './style.css'
 // import App from './App/Defer.vue'
 // import App from './App/Resize.vue'
 // import App from './App/BackTop.vue'
-
-import App from './App/ComputedModel.vue'
+// import App from './App/ComputedModel.vue'
+import App from './App/CustomInput.vue'
 
 import ArcoVue from '@arco-design/web-vue'
 import '@arco-design/web-vue/dist/arco.css'

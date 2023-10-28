@@ -14,3 +14,5 @@
 - [JS 实现函数重载](https://www.bilibili.com/video/BV1KN411b7x6/?spm_id_from=333.999.0.0&vd_source=50442939bf93cd24f3538854e9ddeddd)
 
 - [（NB）使用 computed 拦截 v-model](https://www.bilibili.com/video/BV1up4y1F7Rz/?spm_id_from=333.999.0.0&vd_source=50442939bf93cd24f3538854e9ddeddd)
+
+- [（优秀）UI 组件的二次封装](https://www.bilibili.com/video/BV1ZQ4y1W7Wc/?spm_id_from=333.999.0.0&vd_source=50442939bf93cd24f3538854e9ddeddd)
