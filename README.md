@@ -10,3 +10,5 @@
 - [js 实现环形可视化音频](https://blog.csdn.net/weixin_43165220/article/details/103975207)
 
 - [Clipboard API](https://www.bilibili.com/video/BV1Xh4y1z7Nt/?spm_id_from=333.999.0.0&vd_source=50442939bf93cd24f3538854e9ddeddd)
+
+- [JS实现函数重载](https://www.bilibili.com/video/BV1KN411b7x6/?spm_id_from=333.999.0.0&vd_source=50442939bf93cd24f3538854e9ddeddd)
