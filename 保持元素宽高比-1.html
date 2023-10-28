@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>保持元素宽高比</title>
+    <style>
+      .item {
+        background: #f40;
+        width: 50%;
+        margin: 0 auto;
+        /*要求高度 是宽度的 3/4 */
+        /* aspect-ratio 有兼容性问题 */
+        aspect-ratio: 4 / 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="item"></div>
+  </body>
+</html>
