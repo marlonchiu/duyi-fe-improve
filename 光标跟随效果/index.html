@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>光标跟随效果</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .text-container {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .cursor {
+        position: absolute;
+        width: 1em;
+        height: 1.2em;
+        line-height: 1.2em;
+        background: #000;
+        animation: flicker 1s infinite;
+      }
+
+      @keyframes flicker {
+        0% {
+          opacity: 0;
+        }
+        25% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        75% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-container">
+      <div class="text"></div>
+      <div class="cursor"></div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

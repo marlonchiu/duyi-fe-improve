@@ -20,3 +20,6 @@
 - [保持元素宽高比](https://www.bilibili.com/video/BV15m4y1g7cu/?spm_id_from=333.337.search-card.all.click&vd_source=50442939bf93cd24f3538854e9ddeddd)
 
 - [漩涡型二维数组](https://www.bilibili.com/video/BV15w411Y7CC/?spm_id_from=333.999.0.0&vd_source=50442939bf93cd24f3538854e9ddeddd)
+
+- [光标跟随效果](https://www.bilibili.com/video/BV1eu4y1x7eQ/?spm_id_from=333.999.0.0&vd_source=50442939bf93cd24f3538854e9ddeddd)
+- [Vue3 实现打字机效果](https://juejin.cn/post/7294097362875760677)
