@@ -23,3 +23,6 @@
 
 - [光标跟随效果](https://www.bilibili.com/video/BV1eu4y1x7eQ/?spm_id_from=333.999.0.0&vd_source=50442939bf93cd24f3538854e9ddeddd)
 - [Vue3 实现打字机效果](https://juejin.cn/post/7294097362875760677)
+
+- [右键菜单组件的封装](https://www.bilibili.com/video/BV1sw411C7FC/?spm_id_from=333.999.0.0&vd_source=50442939bf93cd24f3538854e9ddeddd)
+- [右键菜单的位置抉择](https://www.bilibili.com/video/BV1f34y1u7Wd/?spm_id_from=333.999.0.0&vd_source=50442939bf93cd24f3538854e9ddeddd)
