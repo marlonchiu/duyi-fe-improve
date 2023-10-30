@@ -2,7 +2,7 @@
   <div ref="containerRef">
     <slot></slot>
     <Teleport to="body">
-      <Transition @before-enter="handleBeforeEnter" @@enter="handleEnter" @after-enter="handleAfterEnter">
+      <Transition @before-enter="handleBeforeEnter" @enter="handleEnter" @after-enter="handleAfterEnter">
         <div v-if="showMenu" class="content-menu" :style="{ left: pos.posX + 'px', top: pos.posY + 'px' }">
           <div v-size-ob="handleSizeChange" class="menu-list">
             <div @click="handleClick(item)" class="menu-item" v-for="(item, i) in menu" :key="item.label">
@@ -80,11 +80,35 @@ function handleAfterEnter(el) {
 // 元素尺寸
 const w = ref(0)
 const h = ref(0)
-function handleSizeChange(e) {
-  console.log(e)
-  w.value = e.width
-  h.value = e.height
+function handleSizeChange(size) {
+  console.log(size)
+  w.value = size.width
+  h.value = size.height
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.content-menu {
+  position: fixed;
+  z-index: 999;
+  padding: 4px 4px;
+  border-radius: 6px;
+  border: 1px solid rgba(222, 222, 222, 0.5);
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  user-select: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  .menu-list {
+    .menu-item {
+      padding: 4px 12px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+}
+</style>

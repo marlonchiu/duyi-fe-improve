@@ -6,7 +6,6 @@ export function useContextMenu(containerRef) {
   const showMenu = ref(false)
 
   const handleContextMenu = (e) => {
-    console.log(6666)
     e.preventDefault()
     e.stopPropagation()
 
@@ -29,7 +28,7 @@ export function useContextMenu(containerRef) {
 
   onUnmounted(() => {
     const div = containerRef.value
-    div.removeEventListener('contextmenu')
+    containerRef?.value.removeEventListener('contextmenu')
     // 移除window 上的事件
     window.removeEventListener('click')
     window.removeEventListener('contextmenu')
