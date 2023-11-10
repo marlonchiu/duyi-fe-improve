@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>columns 实现横向分组布局</title>
+  <style>
+    .wrap {
+      display: flex;
+      width: 425px;
+      overflow: auto;
+      outline: 1px dashed #9747FF;
+
+      scroll-snap-type: x mandatory;
+    }
+
+    .list {
+      height: 200px;
+      column-width: 400px;
+    }
+
+    .item {
+      display: inline-flex;
+      width: 80px;
+      margin: 10px;
+      aspect-ratio: 1/1;
+      background: #ffe8a3;
+      color: #333;
+      font-size: 30px;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /*第1、9、17...个元素添加吸附对象*/
+    .item:nth-child(8n+1) {
+      scroll-snap-align: start;
+      background: #f5c33f;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="list">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+    <div class="item">11</div>
+    <div class="item">12</div>
+    <div class="item">13</div>
+    <div class="item">14</div>
+    <div class="item">15</div>
+    <div class="item">16</div>
+    <div class="item">17</div>
+    <div class="item">18</div>
+    <div class="item">19</div>
+    <div class="item">20</div>
+  </div>
+</div>
+</body>
+</html>

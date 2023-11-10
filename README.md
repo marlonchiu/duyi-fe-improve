@@ -26,3 +26,7 @@
 
 - [右键菜单组件的封装](https://www.bilibili.com/video/BV1sw411C7FC/?spm_id_from=333.999.0.0&vd_source=50442939bf93cd24f3538854e9ddeddd)
 - [右键菜单的位置抉择](https://www.bilibili.com/video/BV1f34y1u7Wd/?spm_id_from=333.999.0.0&vd_source=50442939bf93cd24f3538854e9ddeddd)
+
+- [CSS columns 完美解决自动分组布局](https://mp.weixin.qq.com/s/zOkP2jN8DdYOBDthYI5hoA)
+- [CSS columns | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/columns)
+- [scroll-snap-type | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/scroll-snap-type)
