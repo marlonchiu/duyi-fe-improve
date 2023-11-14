@@ -1,19 +1,24 @@
-<script setup>
-import UseRefHistory from './views/UseRefHistory.vue'
-import OnClickOutside from './views/OnClickOutside.vue'
-import UseVModel from './views/UseVModel.vue'
-import UseIntersectionObserver from './views/UseIntersectionObserver.vue'
-import UseTransition from './views/UseTransition.vue'
-</script>
-
 <template>
-  <UseRefHistory />
-  <OnClickOutside />
-  <UseVModel />
-  <UseIntersectionObserver />
-  <UseTransition />
+  <a-layout style="height: 1000px;">
+    <a-layout>
+      <a-layout-sider :resize-directions="['right']">
+        <Home />
+      </a-layout-sider>
+      <a-layout-content>
+        <router-view></router-view>
+      </a-layout-content>
+    </a-layout>
+  </a-layout>
 </template>
 
-<style scoped>
+<script setup>
+import Home from '@/views/Home.vue'
+</script>
 
+<style scoped>
+:deep(.arco-layout-sider),
+:deep(.arco-layout-content) {
+  padding: 20px;
+  text-align: center;
+}
 </style>
