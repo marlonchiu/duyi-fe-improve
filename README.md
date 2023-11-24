@@ -31,9 +31,9 @@
 - [CSS columns | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/columns)
 - [scroll-snap-type | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/scroll-snap-type)
 
-- [旋转中的视差效果(https://www.bilibili.com/video/BV1My4y1c7Ar)
-- [实现防篡改的水印(https://www.bilibili.com/video/BV18c411972C)
-- [利用自定义ref，几行代码实现极致防抖(https://www.bilibili.com/video/BV1pC4y1J71x)
+- [旋转中的视差效果](https://www.bilibili.com/video/BV1My4y1c7Ar)
+- [实现防篡改的水印](https://www.bilibili.com/video/BV18c411972C)
+- [利用自定义ref，几行代码实现极致防抖](https://www.bilibili.com/video/BV1pC4y1J71x)
 
 - [CSS下划线动画](https://www.bilibili.com/video/BV1Rb4y1g7bp)
 - [对象数组去重](https://www.bilibili.com/video/BV1eC4y1n7JS)
