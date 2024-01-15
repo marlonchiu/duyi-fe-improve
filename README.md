@@ -40,3 +40,5 @@
 - [正则表达式检查密码强度，前瞻运算该怎样运用](https://www.bilibili.com/video/BV1x94y1j7nU)
 - [统计字符频率的风骚写法](https://www.bilibili.com/video/BV1pu4y1n7WN)
 - [更高效的图片预览方案 dataUrl和base64你了解多少](https://www.bilibili.com/video/BV1qN411M7yA)
+- [钉钉官网的滚动动画](https://www.bilibili.com/video/BV1C64y1H7VE)
+- [钉钉官网的滚动动画 | VUE 参考](https://github.com/Yuzu-io/vue-scroll-animation/blob/main/src/components/BgScrollAnimation.vue)
